@@ -1,0 +1,34 @@
+@import './variables';
+
+:root{
+    font-size: 1rem;
+    font: 500 1rem Roboto;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    color: $text-color-primary;
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: $background-secondary;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: darken($color: $background-secondary, $amount: 10%);
+}

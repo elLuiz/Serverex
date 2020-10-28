@@ -1,0 +1,22 @@
+@import '../../variables';
+
+.products-container{
+    width: 100vw;
+    height: 90vh;
+    padding: 1rem;
+
+    .description{
+        font: 400 2.5rem Poppins;
+    }
+
+    .products{
+        padding: 1rem .5rem;
+        height: 90%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@import './product';

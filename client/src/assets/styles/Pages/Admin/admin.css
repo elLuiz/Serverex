@@ -1,0 +1,34 @@
+:root {
+  font-size: 1rem;
+  font: 500 1rem Roboto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  color: #4D4D4D;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #596799;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #465179;
+}
+
+/*# sourceMappingURL=admin.css.map */

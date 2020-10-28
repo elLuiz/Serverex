@@ -1,0 +1,21 @@
+@import '../../variables';
+
+.orders-container{
+    width: 100vw;
+    height: 90vh;
+    padding: 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .orders{
+        width: 100vw;
+        height: 90%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@import './order';
