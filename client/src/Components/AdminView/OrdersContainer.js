@@ -17,6 +17,11 @@ export class OrdersContainer extends Component {
             this.setState({orders: [...this.state.orders, product]})
         })
     }
+
+    deliverProduct = (id)=>{
+        socket.emit("deliver-product", "Your order has been delivered.")
+        this.setState({orders: [...this.state.orders.filter(order => order.productId !== id)]})
+    }
     render() {
         const {orders} = this.state;
         
@@ -30,12 +35,13 @@ export class OrdersContainer extends Component {
                 <div className="orders">
                     {
                         orders.map((order)=> (
-                            <Order 
+                            <Order key={order.productId}
                                 productImg={order.productImg}
                                 productName={order.productName}
                                 productId={order.productId}
                                 productPrice={order.productPrice}
                                 userId={order.userId}
+                                deliverProduct={this.deliverProduct}
                             />
                         ))
                     }

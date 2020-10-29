@@ -1,5 +1,4 @@
 import React from 'react';
-import Index from './Pages/Index';
 import Routes from './Routes';
 
 function App() {

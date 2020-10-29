@@ -16,4 +16,8 @@ io.on('connection', socket=>{
         Object.assign(product, {userId: socket.id})
         socket.broadcast.emit("order-product", product)
     })
+
+    socket.on("deliver-product", alert => {
+        socket.broadcast.emit("deliver-product", alert)
+    })
 })
